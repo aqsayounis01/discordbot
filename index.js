@@ -22,7 +22,7 @@ const client = new Client({
 
 
 
-client.login('MTI2NjcxNjA0NDg2NTU3MjkyNQ.GPb83n.ojMQdQtHxYPu2ufaBVB0MLe2PHJ5y2M2XruEAw');
+client.login(tokensomewhereelse);
 
 client.on('messageCreate',async(message)=>
 {

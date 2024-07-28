@@ -10,7 +10,7 @@ const commands = [
 ];
 
 //this is a client 
-const rest = new REST({ version: '10' }).setToken('MTI2NjcxNjA0NDg2NTU3MjkyNQ.GPb83n.ojMQdQtHxYPu2ufaBVB0MLe2PHJ5y2M2XruEAw');
+const rest = new REST({ version: '10' }).setToken(tokensomewhereelse);
 
 
 //immediately invoked function expression 
@@ -19,7 +19,7 @@ const rest = new REST({ version: '10' }).setToken('MTI2NjcxNjA0NDg2NTU3MjkyNQ.GP
     try {
   console.log('Started refreshing application (/) commands.');
 //client id in applaication in discord development portal
-  await rest.put(Routes.applicationCommands('1266716044865572925'), { body: commands });
+  await rest.put(Routes.applicationCommands(thiswasclientid), { body: commands });
 
   console.log('Successfully reloaded application (/) commands.');
 } catch (error) {
